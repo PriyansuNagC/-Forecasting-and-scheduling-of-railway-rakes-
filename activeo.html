@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Shipment Dashboard</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 120px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+          }
+          .dropdown-content a {
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+          }
+          .dropdown-content a:hover {
+            background-color: #f0f0f0;
+          }
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <h1>Active Orders</h1>
+        <button class="dropbtn">3</button>
+        <div class="dropdown-content">
+          <a href="#">3</a>
+          <a href="#">2</a>
+          <a href="#">1</a>
+        </div>
+      </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Request ID</th>
+                <th>Quantity</th>
+                <th>Coal Grade</th>
+                <th>Order initiated Date</th>
+                <th>Status</th>
+                <th>Estimated Loading Time (hrs)</th>
+                <th>Demurrage Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11231</td>
+                <td>5,000 MT</td>
+                <td>GRADE A</td>
+                <td>2023-10-30</td>
+                <td>Loading</td>
+                <td>3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11137</td>
+                <td>5,00 MT</td>
+                <td>GRADE A</td>
+                <td>2023-10-27</td>
+                <td>In-transit</td>
+                <td>5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11107</td>
+                <td>2,500 MT</td>
+                <td>GRADE C</td>
+                <td>2023-10-20</td>
+                <td>In-transit</td>
+                <td>2</td>
+                <td></td>
+            </tr>
+            </tbody>
+    </table>
+</body>
+</html>

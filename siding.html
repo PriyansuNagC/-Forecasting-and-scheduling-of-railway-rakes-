@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siding Operator - Home</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color:bisque;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        
+        .navigation {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            color :chocolate;
+        }
+        
+        .navigation li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .navigation a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .navigation a:hover {
+            color: #333;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        .widgets {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .widget {
+            width: calc(33% - 20px);
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        .widget h2 {
+            margin-bottom: 10px;
+        }
+        
+        .widget p {
+            font-size: 1.2em;
+        }
+        
+        .order-history {
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .order-history h2 {
+            margin-bottom: 10px;
+        }
+        
+        .order-history table {
+            width: 10; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            padding: 40px;
+          }
+          
+          th,
+          td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+          }
+          
+          th {
+            background-color: #f2f2f2;
+          }
+          #contact {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            align-items: baseline;
+          }
+          #contact p {
+            margin-bottom: 5px;
+          }
+          #contact .icons {
+            margin-top: 20px;
+          }
+          #contact .icons a {
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+          }
+          #contact .icons a:hover {
+            transform: scale(1.2);
+          }
+          #navbar {
+            background-color:bisque;
+            color:black;
+            padding: 50px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          #navbar ul li {
+            margin-right: 40px;
+          }
+          #navbar ul li:last-child {
+            margin-right: 0;
+          }
+          #navbar ul li a {
+            text-decoration: none;
+            color:black;
+            transition: color 0.3s ease;
+            font-family: 'Times New Roman';
+            font-size: 20px;
+          }
+          #navbar ul li a:hover {
+            color:royalblue;
+          }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome , Siding Operator</h1>
+        <div class="navigation">
+        </div>
+        <div id="navbar">
+            <ul>
+              <li><a href="siding.html">Dashboard</a></li>
+              <li><a href="orderhis.html">Order History</a></li>
+              <li><a href="placeorder.html">Place Order</a></li>
+            </ul>
+          </div>
+    </header>
+
+    <main>
+        <section class="widgets">
+            <div class="widget">
+                <h2>TOTAL PENDING ORDERS</h2>
+                <p>2</p>
+            </div>
+            <div class="widget">
+                <h2>TOTAL ACTIVE ORDERS</h2>
+                <p>3</p>
+            </div>
+            <div class="widget">
+                <h2>TOTAL COMPLETED ORDERS</h2>
+                <p>27</p>
+            </div>
+        </section>
+        <section class="demurrage-costs">
+            <table class="notification">
+                <thead><th>Demurrage Costs</th></thead>
+                <tbody><td>2023-11-05 09:15 AM  New request for 500 tons of Grade A coal submitted</td></tbody>
+                    <tbody><td>2023-11-08 02:30 PM  Request ID 11231 has been scheduled for transport</td></tbody>
+                   <tbody> <td>2023-11-11 11:45 AM  Demurrage charges of Rs 34,000 applied for Request ID-110 due to extended unloading time.</td></tbody>
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+</body>
+</html>

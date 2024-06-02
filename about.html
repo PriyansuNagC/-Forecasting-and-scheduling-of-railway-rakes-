@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  #navbar {
+    background-color:white;
+    color:black;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  #navbar ul li {
+    margin-right: 40px;
+  }
+  #navbar ul li:last-child {
+    margin-right: 0;
+  }
+  #navbar ul li a {
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s ease;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+  }
+  #navbar ul li a:hover {
+    color:royalblue;
+  }
+  #about-us {
+    background-color:aliceblue;
+    margin-top: 50px;
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #about-us .content {
+    flex: 1;
+  }
+  #about-us h2 {
+    margin-bottom: 5px;
+  }
+  #about-us p {
+    margin-bottom: 5px;
+  }
+  #about-us img {
+    max-width: 200px;
+    height: auto;
+  }
+  #contact {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    align-items: baseline;
+  }
+  #contact p {
+    margin-bottom: 5px;
+  }
+  #contact .icons {
+    margin-top: 20px;
+  }
+  #contact .icons a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  #contact .icons a:hover {
+    transform: scale(1.2);
+  }
+  .button {
+    padding: 20px 40px;
+    background-color: #333;
+    color: #fff;
+    text-decoration:none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .button:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div id="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Get Started</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Log In</a></li>
+  </ul>
+</div>
+
+<section id="about-us">
+  <div class="content">
+    <h2 style="font-family:'Times New Roman'; font-size:35px;">Who Are We?</h2>
+    <p style="font-family:'Times New Roman'; font-size:20px;">
+        Coal Rake Hub is a team of dedicated professionals specializing in coal logistics optimization. We combine innovative technology and data-driven solutions to revolutionize the coal transportation industry.
+    </p>
+    <h2 style="font-family:'Times New Roman'; font-size:35px;">
+        How We Solve the Problem ?
+    </h2>
+    <p style="font-family:'Times New Roman'; font-size:20px;">
+        Our digital platform provides real-time updates on coal availability at railway sidings, ensuring efficient dispatch of trains to locations with sufficient coal. By optimizing transportation routes and reducing waiting times, we help companies save on demurrage charges and streamline operations.
+    </p>
+  </div>
+  <img src="logo.png" alt="Your Company Logo">
+</section>
+
+<section id="contact">
+  <p>Contact Us:</p>
+  <p>Phone: 123-456-789</p>
+  <p>Email: info@coalrakehub.com</p>
+</section>
+
+</body>
+</html>

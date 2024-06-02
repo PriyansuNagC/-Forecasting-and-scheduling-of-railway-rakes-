@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          th,
+          td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+          }
+          
+          th {
+            background-color: #f2f2f2;
+          }
+          #contact {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            align-items: baseline;
+          }
+          #contact p {
+            margin-bottom: 5px;
+          }
+          #contact .icons {
+            margin-top: 20px;
+          }
+          #contact .icons a {
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+          }
+          #contact .icons a:hover {
+            transform: scale(1.2);
+          }
+          #navbar {
+            color:black;
+            padding: 50px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          #navbar ul li {
+            margin-right: 40px;
+          }
+          #navbar ul li:last-child {
+            margin-right: 0;
+          }
+          #navbar ul li a {
+            text-decoration: none;
+            color:black;
+            transition: color 0.3s ease;
+            font-family: 'Times New Roman';
+            font-size: 20px;
+          }
+          #navbar ul li a:hover {
+            color:royalblue;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+        </div>
+        <div id="navbar">
+            <ul>
+              <li ><a href="orderhis.html"><b>Completed History</b></a></li>
+              <li><a href="activeo.html">Active Order</a></li>
+              <li><a href="pending.html">Pending Order</a></li>
+            </ul>
+          </div>
+    </header>
+    <table>
+        <thead>
+          <tr>
+            <th>Request ID</th>
+            <th>Quantity</th>
+            <th>Coal Grade</th>
+            <th>Order initiated date</th>
+            <th>Order Delivered date</th>
+            <th>Loading Time (in hours)</th>
+            <th>Demurrage Cost</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+          <tr>
+            <td>11023</td>
+            <td>5,000 MT</td>
+            <td>GRADE A</td>
+            <td>2023-10-20</td>
+            <td>2023-10-30</td>
+            <td>4</td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <td>11210</td>
+            <td>5,700 MT</td>
+            <td>GRADE A</td>
+            <td>2023-09-03</td>
+            <td>2023-09-08</td>
+            <td>2</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11020</td>
+            <td>2,100 MT</td>
+            <td>GRADE C</td>
+            <td>2023-08-12</td>
+            <td>2023-08-18</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11013</td>
+            <td>3,770 MT</td>
+            <td>GRADE A,B</td>
+            <td>2023-07-06</td>
+            <td>2023-07-18</td>
+            <td>5</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11127</td>
+            <td>4,471 MT</td>
+            <td>GRADE A</td>
+            <td>2023-06-04</td>
+            <td>2023-06-15</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11023</td>
+            <td>5,000 MT</td>
+            <td>GRADE A</td>
+            <td>2023-10-20</td>
+            <td>2023-10-30</td>
+            <td>4</td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <td>11210</td>
+            <td>5,700 MT</td>
+            <td>GRADE A</td>
+            <td>2023-09-03</td>
+            <td>2023-09-08</td>
+            <td>2</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11020</td>
+            <td>2,100 MT</td>
+            <td>GRADE C</td>
+            <td>2023-08-12</td>
+            <td>2023-08-18</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11013</td>
+            <td>3,770 MT</td>
+            <td>GRADE A,B</td>
+            <td>2023-07-06</td>
+            <td>2023-07-18</td>
+            <td>5</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11127</td>
+            <td>4,471 MT</td>
+            <td>GRADE A</td>
+            <td>2023-06-04</td>
+            <td>2023-06-15</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11097</td>
+            <td>7,210 MT</td>
+            <td>GRADE B</td>
+            <td>2023-05-08</td>
+            <td>2023-05-25</td>
+            <td>23</td>
+            <td>20,000</td>
+          </tr>
+          <tr>
+            <td>11056</td>
+            <td>3,200 MT</td>
+            <td>GRADE B.C</td>
+            <td>2023-04-25</td>
+            <td>2023-04-29</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11127</td>
+            <td>4,471 MT</td>
+            <td>GRADE A</td>
+            <td>2023-06-04</td>
+            <td>2023-06-15</td>
+            <td>4</td>
+            <td>3000</td>
+          </tr>
+          <tr>
+            <td>11023</td>
+            <td>5,000 MT</td>
+            <td>GRADE A</td>
+            <td>2023-10-20</td>
+            <td>2023-10-30</td>
+            <td>4</td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <td>11210</td>
+            <td>5,700 MT</td>
+            <td>GRADE A</td>
+            <td>2023-09-03</td>
+            <td>2023-09-08</td>
+            <td>2</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11020</td>
+            <td>2,100 MT</td>
+            <td>GRADE C</td>
+            <td>2023-08-12</td>
+            <td>2023-08-18</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11013</td>
+            <td>3,770 MT</td>
+            <td>GRADE A,B</td>
+            <td>2023-07-06</td>
+            <td>2023-07-18</td>
+            <td>5</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11127</td>
+            <td>4,471 MT</td>
+            <td>GRADE A</td>
+            <td>2023-06-04</td>
+            <td>2023-06-15</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11097</td>
+            <td>7,210 MT</td>
+            <td>GRADE B</td>
+            <td>2023-05-08</td>
+            <td>2023-05-25</td>
+            <td>23</td>
+            <td>20,000</td>
+          </tr>
+          <tr>
+            <td>11056</td>
+            <td>3,200 MT</td>
+            <td>GRADE B.C</td>
+            <td>2023-04-25</td>
+            <td>2023-04-29</td>
+            <td>3</td>
+            <td>5000</td>
+          </tr>
+          <tr>
+            <td>11020</td>
+            <td>2,100 MT</td>
+            <td>GRADE C</td>
+            <td>2023-08-12</td>
+            <td>2023-08-18</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11013</td>
+            <td>3,770 MT</td>
+            <td>GRADE A,B</td>
+            <td>2023-07-06</td>
+            <td>2023-07-18</td>
+            <td>5</td>
+            <td>6000</td>
+          </tr>
+          <tr>
+            <td>11127</td>
+            <td>4,471 MT</td>
+            <td>GRADE A</td>
+            <td>2023-06-04</td>
+            <td>2023-06-15</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11097</td>
+            <td>7,210 MT</td>
+            <td>GRADE B</td>
+            <td>2023-05-08</td>
+            <td>2023-05-25</td>
+            <td>23</td>
+            <td>20,000</td>
+          </tr>
+          <tr>
+            <td>11056</td>
+            <td>3,200 MT</td>
+            <td>GRADE B.C</td>
+            <td>2023-04-25</td>
+            <td>2023-04-29</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11127</td>
+            <td>4,471 MT</td>
+            <td>GRADE A</td>
+            <td>2023-06-04</td>
+            <td>2023-06-15</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>11097</td>
+            <td>7,210 MT</td>
+            <td>GRADE B</td>
+            <td>2023-05-08</td>
+            <td>2023-05-25</td>
+            <td>23</td>
+            <td>20,000</td>
+          </tr>
+          <tr>
+            <td>11056</td>
+            <td>3,200 MT</td>
+            <td>GRADE B.C</td>
+            <td>2023-04-25</td>
+            <td>2023-04-29</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    
+</body>
+</html>

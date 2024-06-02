@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Shipment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        select {
+            width: 100%;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            z-index: 9999;
+          }
+          .popup-message {
+            margin-bottom: 10px;
+          }
+          .popup-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          .popup-button:hover {
+            background-color: #555;
+          }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <h2>Coal Shipment Order</h2>
+        <div>
+            <label for="customerID">Customer ID:</label>
+            <input type="text" id="customerID" name="customerID" required>
+        </div>
+        <div>
+            <label for="coalQuantity">Coal Quantity (MT):</label>
+            <input type="number" id="coalQuantity" name="coalQuantity" required>
+        </div>
+        <div>
+            <label for="coalQuantity">Rank Assigned :</label>
+            <input type="number" id="coalQuantity" name="coalQuantity" required>
+        </div>
+        <div>
+            <label for="coalGrade">Coal Grade:</label>
+            <select id="coalGrade" name="coalGrade" required>
+                <option value="">Select Grade</option>
+                <option value="A">GRADE A</option>
+                <option value="B">GRADE B</option>
+                <option value="C">GRADE C</option>
+            </select>
+        </div>
+        <div>
+            <label for="coalQuantity">Starting Point :</label>
+            <input type="text" id="coalQuantity" name="coalQuantity" required>
+        </div>
+        <div>
+            <label for="coalQuantity">Destination :</label>
+            <input type="text" id="coalQuantity" name="coalQuantity" required>
+        </div>
+        <div>
+            <label for="coalQuantity">Expected Arrival Time :</label>
+            <input type="number" id="coalQuantity" name="coalQuantity" required>
+        </div>
+        <div>
+            <label for="coalQuantity">Expected Deliver Time :</label>
+            <input type="number" id="coalQuantity" name="coalQuantity" required>
+        </div>
+        <input type="submit" value="Schedule">
+        <div class="popup" id="popup" style="display: none;">
+            <p class="popup-message">Your order has been scheduled!</p>
+            <button class="popup-button" onclick="closePopup()">Close</button>
+          </div>
+    </form>
+
+    <script>
+        function placeOrder() {
+            document.getElementById("popup").style.display = "block";
+            return false; 
+          }
+        
+          function closePopup() {
+            document.getElementById("popup").style.display = "none";
+          }
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            alert("Your order has been scheduled!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  #sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+  .b {
+    font-family: 'Times New Roman';
+    font-size: 25px;
+  }
+  #sidebar img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #sidebar p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #content {
+    margin-left: 220px; 
+    padding: 20px;
+  }
+  #content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .graph {
+    margin-bottom: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  #contact {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    align-items: baseline;
+  }
+  #contact p {
+    margin-bottom: 5px;
+  }
+  #contact .icons {
+    margin-top: 20px;
+  }
+  #contact .icons a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  #contact .icons a:hover {
+    transform: scale(1.2);
+  }
+  
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <img src="logo.png" alt="Company Logo">
+  <p>Welcome, Admin</p>
+</div>
+
+<div id="content">
+  <h1 style="font-family: 'Times New Roman'; font-size: 40px;">
+    Dashboard : </h1>
+  
+  <h2 style="font-family: 'Times New Roman'; font-size: 25px;">Top 4 Coal Producing States in India</h2>
+  <ol style="font-family: 'Times New Roman'; font-size: 22px;">
+    <li>Odisha</li>
+    <li>Chhattisgarh</li>
+    <li>Jharkhand</li>
+    <li>Madhya Pradesh</li>
+  </ol>
+  <h2 style="font-family: 'Times New Roman'; font-size: 20px;">Production Graphs of Coal for the States</h2>
+  <div class="graph">
+    <h3 class="b">Odisha</h3>
+    <img src="odisha.svg" alt="Odisha Graph" >
+  </div>
+  
+  <div class="graph">
+    <h3 class="b">Chhattisgarh</h3>
+    <img src="cg.svg" alt="Chhattisgarh Graph">
+  </div>
+  
+  <div class="graph">
+    <h3 class="b">Jharkhand</h3>
+    <img src="jhar.svg" alt="Jharkhand Graph">
+  </div>
+  
+  <div class="graph">
+    <h3 class="b">Madhya Pradesh</h3>
+    <img src="mp.svg" alt="Madhya Pradesh Graph" >
+  </div>
+  <h2 style="font-family: 'Times New Roman'; font-size: 30px;">Stock details of Coal :</h2>
+</div>
+<table>
+  <tr>
+    <th>Siding No.</th>
+    <th>Siding Name</th>
+    <th>Quantity</th>
+    <th>Coal Grade</th>
+    <th>Stock Status</th>
+  </tr>
+  <tr>
+    <td>#S10101</td>
+    <td>AB101</td>
+    <td>5,000 MT</td>
+    <td>GRADE A</td>
+    <td>Sufficient</td>
+  </tr>
+  <tr>
+    <td>#510102</td>
+    <td>ND102</td>
+    <td>5,700 MT</td>
+    <td>GRADE A</td>
+    <td>Sufficient</td>
+  </tr>
+  <tr>
+    <td>#S10103</td>
+    <td>BH103</td>
+    <td>2,100 MT</td>
+    <td>GRADE C</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td>#510104</td>
+    <td>MH104</td>
+    <td>3,770 MT</td>
+    <td>GRADE A,B</td>
+    <td>Low</td>
+  </tr>
+  <tr>
+    <td>#S10105</td>
+    <td>HY105</td>
+    <td>4,471 MT</td>
+    <td>GRADE A</td>
+    <td>Critical</td>
+  </tr>
+  <tr>
+    <td>#510106</td>
+    <td>MH106</td>
+    <td>7,210 MT</td>
+    <td>GRADE B</td>
+    <td>Sufficient</td>
+  </tr>
+  <tr>
+    <td>#510107</td>
+    <td>CL107</td>
+    <td>3,200 MT</td>
+    <td>GRADE B.C</td>
+    <td>Sufficient</td>
+  </tr>
+  <tr>
+    <td>#S10108</td>
+    <td>TU108</td>
+    <td>5,000 MT</td>
+    <td>GRADE A, C</td>
+    <td>Sufficient</td>
+  </tr>
+</table>
+
+  <section id="contact">
+    <p>Contact Us:</p>
+    <p>Phone: 123-456-789</p>
+    <p>Email: info@coalrakehub.com</p>
+  </section>
+  
+
+</body>
+</html>

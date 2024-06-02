@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  #container {
+    margin: 50px auto;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  input[type="text"],
+  input[type="password"],
+  select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div id="container">
+  <h2>Create Account</h2>
+  <form id="signupForm" onsubmit="return redirectToPreviousPage()">
+    <input type="text" id="email" name="email" placeholder="Email" required>
+    <input type="text" id="username" name="username" placeholder="Create Username" required>
+    <input type="password" id="password" name="password" placeholder="Create Password" required>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+    <select id="post" name="post" required>
+      <option value="" disabled selected>Select Post</option>
+      <option value="admin">Admin</option>
+      <option value="sliding_operator">Sliding Operator</option>
+      <option value="mine_operator">Mine Operator</option>
+    </select>
+    <input type="submit" value="Create Account">
+  </form>
+</div>
+
+<script>
+  function redirectToPreviousPage() {
+    window.location.href = "homepage.html";
+    alert("Account Created.")
+    return false; 
+  }
+</script>
+
+</body>
+</html>
